@@ -45,10 +45,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import '../../../static/bulma-divider.min.css';
-</style>
-
 <style lang="scss" scoped>
 
 .icon {

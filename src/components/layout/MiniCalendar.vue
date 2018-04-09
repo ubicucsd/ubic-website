@@ -1,5 +1,5 @@
 <template>
-  <section class="calendar">
+  <section class="minicalendar">
     <div class="container">
       <full-calendar :config="config" :events="events" ref="calendar" />
     </div>
@@ -53,6 +53,6 @@ export default {
 }
 
 h2 {
-  font-size: 30px !important;
+  font-size: 24px !important;
 }
 </style>

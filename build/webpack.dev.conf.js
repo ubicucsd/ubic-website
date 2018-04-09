@@ -27,7 +27,7 @@ module.exports = merge(baseWebpackConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      title: 'My App',
+      title: 'UBIC UCSD',
       filename: 'index.html',
       template: 'index.html',
       favicon: 'src/assets/logo.ico',

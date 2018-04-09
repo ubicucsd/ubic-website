@@ -23,7 +23,8 @@ export default {
         events: {
           googleCalendarId: 'jj0278t9epcqh2iv3i4gjuu98o@group.calendar.google.com'
         },
-        height: 550
+        height: 550,
+        defaultView: 'month'
       },
       events: []
     }
@@ -50,6 +51,6 @@ export default {
 
 <style type="text/css">
 h2 {
-  font-size: 30px !important;
+  font-size: 24px !important;
 }
 </style>
