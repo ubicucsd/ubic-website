@@ -1,12 +1,32 @@
-# SECRET PROJECT
+# UBIC @ UCSD Website
 
-> A work in progress and learning experience.
+The website for the Undergraduate Bioinformatics Club at University of California, San Diego; 2017-2018.
 
-Built with Node.js, Vue.js, Bulma/Buefy, SASS, and Webpack.
+### Prerequisites
 
-### Acknowledgements and Technologies
-- [ndro](https://github.com/ndro) For boilerplate project
-- [Vue.js](https://vuejs.org/)
-- [Bulma](http://bulma.io/)
-- [Buefy](https://buefy.github.io/)
-- [Awesome Vue.js](https://github.com/vuejs/awesome-vue) (additional reference)
+This project is built using Node.js.
+
+### Installing
+
+To install, clone the repository and then run ```npm install``` to download the required dependencies.
+
+To start the development server, run ```npm start``` and start writing.
+
+## Deployment
+
+To build for deployment, run ```npm build``` and the production build will be packed and written to the ```'/dist'``` directory.
+
+## Technologies and Acknowledgements
+
+* [Vue.js](https://vuejs.org/)
+* [Bulma](http://bulma.io/)
+* [Buefy](https://buefy.github.io/)
+
+## Authors
+
+* **Lucas Patel** 
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
