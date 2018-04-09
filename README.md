@@ -6,7 +6,6 @@ Built with Node.js, Vue.js, Bulma/Buefy, SASS, and Webpack.
 
 ### Acknowledgements and Technologies
 - [ndro](https://github.com/ndro) For boilerplate project
-
 - [Vue.js](https://vuejs.org/)
 - [Bulma](http://bulma.io/)
 - [Buefy](https://buefy.github.io/)

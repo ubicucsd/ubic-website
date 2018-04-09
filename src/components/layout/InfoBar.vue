@@ -4,10 +4,10 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            For your information
+            UBIC is...
           </h1>
           <h2 class="subtitle">
-            Be a nice developer!
+            ...
           </h2>
         </div>
       </div>
@@ -22,5 +22,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>

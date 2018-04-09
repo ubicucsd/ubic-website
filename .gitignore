@@ -15,3 +15,7 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+
+credentials.json
+#until json bug fixed
+firebase.js

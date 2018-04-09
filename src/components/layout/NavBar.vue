@@ -1,81 +1,87 @@
 <template>
-  <!--<section class="hero app-navbar is-bold">
-    <div class="hero-head">-->
-      <header class="navbar is-bold">
-        <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-            <i class="fa fa-cog fa-spin fa-2x fa-fw"></i> Logo
-            <!-- ref: http://fontawesome.io/examples/#animated -->
-          </a>
-          <a class="navbar-item is-hidden-desktop" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
-            <b-icon pack="fa" icon="github" type="is-black"></b-icon>
-          </a>
-          <div class="navbar-burger burger" data-target="navbarDropdown">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+  <header class="navbar has-shadow">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <router-link :to="{ name: 'Home' }">
+            <img src="../../assets/logo.png"></img>
+          </router-link>
+        </a>
+        <div class="navbar-burger burger" data-target="navbarDropdown">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-
-        <div id="navbarDropdown" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="#">
-              <router-link :to="{ name: 'Home' }">Home</router-link>
+      </div>
+      <div id="navbarDropdown" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#">
+              Resources
             </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="#">
-                Menu Hover
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="#">
+                Education
               </a>
-              <div class="navbar-dropdown is-boxed">
-                <a class="navbar-item" href="#">
-                  Item 1
-                </a>
-                <a class="navbar-item" href="#">
-                  Item 2
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item" href="#">
-                  Item after divider
-                </a>
-                <a class="navbar-item is-active" href="#">
-                  Item is-active
-                </a>
-              </div>
+              <a class="navbar-item" href="#">
+                Four Year Plan
+              </a>
+              <a class="navbar-item" href="#">
+                 <router-link :to="{ name: 'Opportunities' }" @click.native="closeMenu ()">Opportunities</router-link>
+              </a>
+              <a class="navbar-item" href="#">
+                Careers
+              </a> 
             </div>
           </div>
-
-          <div class="navbar-end">
-            <!--<div class="navbar-item">-->
-              <a class="navbar-item" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
-                <b-icon pack="fa" icon="github" type="is-black"></b-icon>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#">
+              Get Involved
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="#">
+                Events
               </a>
-            <!--</div>-->
-            <div class="navbar-item">
-              <div class="field is-grouped">
-                <p class="control">
-                  <a class="button is-primary is-outlined" href="#">
-                    <span>Button</span>
-                  </a>
-                </p>
-                <p class="control">
-                  <a class="button is-primary" href="#">
-                    <b-icon pack="fa" icon="user"></b-icon>
-                    <span>With Icon</span>
-                  </a>
-                </p>
-              </div>
+              <a class="navbar-item" href="#">
+                Outreach
+              </a>
+              <a class="navbar-item" href="#" >
+                <router-link :to="{ name: 'Podcast' }" @click.native="closeMenu ()">Podcast</router-link>
+              </a>
+              <a class="navbar-item" href="#">
+                Sponsorship
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="#">
+                <router-link :to="{ name: 'Calendar' }" @click.native="closeMenu ()">Calendar</router-link>
+              </a>
+              <a class="navbar-item" href="#">
+                <router-link :to="{ name: 'Contact' }" @click.native="closeMenu ()">Contact</router-link>
+              </a>
             </div>
           </div>
         </div>
-        </div>
-      </header>
-    <!--</div>
-  </section>-->
+      </div>
+    </div>
+  </header>
 </template>
 
 <script>
 export default {
+  methods: {
+    closeMenu () {
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+          var target = $el.dataset.target
+          var $target = document.getElementById(target)
+          $el.classList.toggle('is-active')
+          $target.classList.toggle('is-active')
+        })
+      }
+    }
+  }
 }
 
 /* burger navigation */
@@ -101,7 +107,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <style lang="scss" scoped>
 .navbar {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid dark-grey;
+}
+
+.navbar-item {
+  color: #0a0a0a !important;
+}
+
+img {
+  margin-top: 5%;
 }
 </style>
 
