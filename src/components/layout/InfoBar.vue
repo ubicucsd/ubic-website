@@ -4,11 +4,8 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            UBIC is...
+            UBIC is UCSD Bioinformatics
           </h1>
-          <h2 class="subtitle">
-            ...
-          </h2>
         </div>
       </div>
     </div>

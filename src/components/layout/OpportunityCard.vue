@@ -17,7 +17,7 @@
       <p>Preferred qualifications: {{reqs}}</p>
       <hr>
       <b-tooltip type="is-light" size="is-medium" :multilined=true :label="email">
-        <button class="button is-info is-medium" href="mailto:{{email}}">
+        <button class="button is-info is-medium" :href=>
             Apply
         </button>
       </b-tooltip>
