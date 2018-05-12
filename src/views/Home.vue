@@ -16,15 +16,17 @@
     <div class="section">
       <div class="container">
         <div class="content">
-          <p> UBIC is a community of undergraduate bioinformaticians at UC San Diego serving to strengthen, expand, and support UCSD's bioinformatics program. Bioinformatics is the application of quantitative methods of analysis to approach biological questions. </p>
+          <p> UBIC at UCSD represents the undergraduates studying and interested in the diverse field of bioinformatics. Through a combination of events, programs, and projects our mission is to educate and contribute to the education and aspirations of every bioinformatics student at UC San Diego. </p>
         </div>
       </div>
     </div>
     <div class="section">
       <div class="container">
         <div class="content">
-          <p> UBIC is a community of undergraduate bioinformaticians at UC San Diego serving to strengthen, expand, and support UCSD's bioinformatics program.</p>
-          <p> Bioinformatics is the application of quantitative methods of analysis to approach biological questions. </p>
+          <p> If you’re a student, use the calendar below to find our upcoming events and programs. </p>
+          <p> If you’re a faculty interested in presenting on a topic, or are interested in advertising to our student body please email our Academic Relations Chair, Kritin Karkare (link to contact page). </p>
+          <p> If you’re an industry representative interested in discussing an opportunity with our student body, please email our Industry Relations Chair, Miko Liu (link to contact page).
+          </p>
         </div>
       </div>
     </div>
