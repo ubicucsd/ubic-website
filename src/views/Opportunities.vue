@@ -3,14 +3,17 @@
     <div class="section">
       <div class="columns">
         <!-- Not the best implementation -->
-        <div class="column is-one-third" v-for="opp in opps.slice(0,3)">
-          <OpportunityCard :obj=opp></OpportunityCard>
+        <div class="column is-one-half">
+          <div v-for="opp in opps.slice(0,opps.length/2)">
+            <OpportunityCard  :obj=opp></OpportunityCard>
+            <br>
+          </div>
         </div>
-        <div class="column is-one-third" v-for="opp in opps.slice(3,6)">
-          <OpportunityCard :obj=opp></OpportunityCard>
-        </div>
-        <div class="column is-one-third" v-for="opp in opps.slice(6,9)">
-          <OpportunityCard :obj=opp></OpportunityCard>
+        <div class="column is-one-half">
+          <div v-for="opp in opps.slice(opps.length/2,opps.length)">
+            <OpportunityCard  :obj=opp></OpportunityCard>
+            <br>
+          </div>
         </div>
       </div>
       <article class="message is-info">

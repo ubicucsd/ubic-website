@@ -17,8 +17,8 @@
       <p>Preferred qualifications: {{reqs}}</p>
       <hr>
       <b-tooltip type="is-light" size="is-medium" :multilined=true :label="email">
-        <button class="button is-info is-medium" :href=>
-            Apply
+        <button class="button is-info is-medium">
+            <a :href="`mailto:${email}`">Apply</a>
         </button>
       </b-tooltip>
     </div>
@@ -39,7 +39,7 @@ export default {
       reqsToApply: this.obj[6],
       yrs: this.obj[7],
       imgLink: this.obj[8].replace('open', 'uc'),
-      email: this.obj[9]
+      email: '"' + this.obj[9] + '"'
     }
   }
 }
@@ -62,6 +62,10 @@ export default {
 img {
   width: 100% !important;
   height: 100% !important;
+}
+
+a {
+  color: white;
 }
 
 </style>
