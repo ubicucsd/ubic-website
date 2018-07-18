@@ -1,32 +1,42 @@
 # UBIC @ UCSD Website
 
-The website for the Undergraduate Bioinformatics Club at University of California, San Diego; 2017-2018.
+The website for the Undergraduate Bioinformatics Club at University of California, San Diego; 2018-2019.
 
 ### Prerequisites
 
-This project is built using Node.js.
+This project is built using [Nuxt.js](https://nuxtjs.org).
 
-### Installing
+### Installation
 
-To install, clone the repository and then run ```npm install``` to download the required dependencies.
+To install, clone the repository then run:
 
-To start the development server, run ```npm start``` and start writing.
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-## Deployment
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-To build for deployment, run ```npm build``` and the production build will be packed and written to the ```'/dist'``` directory.
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
+```
 
 ## Technologies and Acknowledgements
 
+* [Nuxt.js](https://nuxtjs.org)
 * [Vue.js](https://vuejs.org/)
 * [Bulma](http://bulma.io/)
 * [Buefy](https://buefy.github.io/)
 
 ## Authors
 
-* **Lucas Patel** 
+* [Lucas Patel](https://github.com/lucaspatel)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
