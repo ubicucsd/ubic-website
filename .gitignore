@@ -13,3 +13,4 @@ dist
 # Lucas added
 #credentials.json
 firebase.js
+.DS_Store
