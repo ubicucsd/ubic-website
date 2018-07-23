@@ -4,7 +4,7 @@
       <br>
       <figure class="icon image">
         <img v-if="imgLink" :src=imgLink>
-        <img v-else src="../../assets/images/opp_default.jpg">
+        <img v-else src="../assets/images/opp_default.jpg">
       </figure>
     </div>
     <div class="card-content">

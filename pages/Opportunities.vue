@@ -4,13 +4,13 @@
       <div class="columns">
         <!-- Not the best implementation -->
         <div class="column is-one-half">
-          <div v-for="opp in opps.slice(0,opps.length/2)">
+          <div v-for="opp in opps.slice(0,(opps.length/2)+1)" :key="opp.id">
             <OpportunityCard  :obj=opp></OpportunityCard>
             <br>
           </div>
         </div>
         <div class="column is-one-half">
-          <div v-for="opp in opps.slice(opps.length/2,opps.length)">
+          <div v-for="opp in opps.slice((opps.length/2)+1,opps.length)" :key="opp.id">
             <OpportunityCard  :obj=opp></OpportunityCard>
             <br>
           </div>
@@ -29,11 +29,11 @@
 </template>
 
 <script>
-import { db } from '../firebase'
-import OpportunityCard from '../components/layout/OpportunityCard.vue'
+import { db } from '../plugins/firebase'
+import OpportunityCard from '../components/OpportunityCard.vue'
 
 export default {
-  name: 'Opportunities',
+  name: 'opportunities',
   data () {
     return {
       opps: []

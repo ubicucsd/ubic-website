@@ -1,41 +1,77 @@
 <template>
   <section class="contact">
     <div class="section">
-      <div class="columns">
-        <div class="column" v-for="officer in officers.slice(0,3)">
-          <OfficerCard :obj=officer></OfficerCard>
+     <b-tabs position="is-centered" class="block">
+      <b-tab-item label="2018-2019">
+        <div>
+          <div class="columns">
+            <div class="column" v-for="officer in officers.slice(0,3)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column" v-for="officer in officers.slice(3,6)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column" v-for="officer in officers.slice(6,9)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column" v-for="officer in officers.slice(9,12)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-one-third" v-for="officer in officers.slice(12,13)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="columns">
-        <div class="column" v-for="officer in officers.slice(3,6)">
-          <OfficerCard :obj=officer></OfficerCard>
+      </b-tab-item>
+      <b-tab-item label="2017-2018">
+        <div>
+          <div class="columns">
+            <div class="column" v-for="officer in officers.slice(0,3)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column" v-for="officer in officers.slice(3,6)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column" v-for="officer in officers.slice(6,9)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column" v-for="officer in officers.slice(9,12)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-one-third" v-for="officer in officers.slice(12,13)" :key="officer.name">
+              <OfficerCard :obj=officer></OfficerCard>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="columns">
-        <div class="column" v-for="officer in officers.slice(6,9)">
-          <OfficerCard :obj=officer></OfficerCard>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column" v-for="officer in officers.slice(9,12)">
-          <OfficerCard :obj=officer></OfficerCard>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column is-one-third" v-for="officer in officers.slice(12,13)">
-          <OfficerCard :obj=officer></OfficerCard>
-        </div>
-      </div>
+      </b-tab-item>
+    </b-tabs>
+
     </div>
   </section>
 </template>
 
 <script>
-import { db } from '../firebase'
-import OfficerCard from '../components/layout/OfficerCard.vue'
+import { db } from '../plugins/firebase'
+import OfficerCard from '../components/OfficerCard.vue'
 
 export default {
-  name: 'Contact',
+  name: 'contact',
   data () {
     return {
       officers: []

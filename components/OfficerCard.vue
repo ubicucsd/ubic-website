@@ -10,7 +10,6 @@
         <div class="media-content">
           <p class="subtitle is-6">{{title}}</p>
           <p class="title is-4">{{name}}
-            <p v-if="linkedinURL !== undefined"
             <a target="_blank" v-if="linkedinURL !== undefined" :href="linkedinURL">
               <b-icon pack="fa" icon="linkedin-square" size="is-small"/>
             </a>
@@ -41,7 +40,7 @@ export default {
       email: this.obj.ucsdemail,
       linkedinURL: this.obj.linkedinURL,
       twitterURL: this.obj.twitterURL,
-      imgPath: require('../../assets/images/officers/' + this.obj.img)
+      imgPath: require('../assets/images/officers/' + this.obj.img)
     }
   }
 }
