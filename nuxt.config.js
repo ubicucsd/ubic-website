@@ -18,7 +18,7 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#F7C8A5' },
-  router: { base: 'ubic-website-host' },
+  router: { base: '' },
   /*
   ** Build configuration
   */
