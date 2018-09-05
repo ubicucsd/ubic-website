@@ -13,13 +13,13 @@
               <div class="form">
                 <div class="field">
                   <div class="control">
-                    <input class="input" type="email" placeholder="Your Email" autofocus="" v-model="email">
+                    <input class="input" type="email" placeholder="Your Email" autofocus="">
                   </div>
                 </div>
 
                 <div class="field">
                   <div class="control">
-                    <input class="input" type="password" placeholder="Your Password" v-model="password">
+                    <input class="input" type="password" placeholder="Your Password">
                   </div>
                 </div>
                 <div class="field">
@@ -28,16 +28,16 @@
                     Remember me
                   </label>
                 </div>
-                <button class="button is-block is-info is-fullwidth" @click="showError">Login</button>
+                <button class="button is-block is-info is-fullwidth" @click="error">Login</button>
                 <hr>
-                <button class="button is-block is-info is-fullwidth" @click="$auth.loginWith('google')">Login with UCSD</button>
+                <button class="button is-block is-info is-fullwidth" @click="error">Login with UCSD</button>
               </div>
                               
 
             </div>
             <p class="has-text-grey">
-              <a @click="showError">Sign Up</a> &nbsp;·&nbsp;
-              <a @click="showError">Forgot Password</a>
+              <a @click="error">Sign Up</a> &nbsp;·&nbsp;
+              <a @click="error">Forgot Password</a>
             </p>
           </div>
         </div>
@@ -52,51 +52,24 @@ import 'buefy'
 
 export default {
   name: 'login',
-  middleware: ['auth'],
   data () {
     return {
-      email: '',
-      password: '',
-      error: null
+      yes: "no"
     }
   },
   methods: {
-    showError() {
+    error() {
       this.$toast.open({
         duration: 5000,
         message: `Login is currently disabled!`,
         position: 'is-bottom',
         type: 'is-danger'
       })
-    },
-    async login() {
-      this.error = null
-      return this.$auth
-        .loginWith('local', {
-          data: {
-            username: this.username,
-            password: this.password
-          }
-        })
-        .catch(e => {
-          this.error = e + ''
-        })
-    }
-  },
-  computed: {
-    redirect() {
-      return (
-        this.$route.query.redirect &&
-        decodeURIComponent(this.$route.query.redirect)
-      )
-    },
-    isCallback() {
-      return Boolean(this.$route.query.callback)
     }
   },
   firestore () {
     return {
-      officers: db.collection('officers').orderBy('index')
+      officers: db.collection('officers').orderBy('index'),
     }
   }
 }

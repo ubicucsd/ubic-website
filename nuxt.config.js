@@ -18,7 +18,7 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#F7C8A5' },
-  router: { base: '' },
+  router: { base: 'ubic-website-host' },
   /*
   ** Build configuration
   */
@@ -29,10 +29,34 @@ module.exports = {
   ],
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/auth',
     'nuxt-buefy'
   ],
   axios: {
+    credentials: false
     // proxyHeaders: false
+  },
+  auth: {
+    redirect: {
+      callback: '/callback'
+    },
+    strategies: {
+      google: {
+        client_id:
+          '10317661874-kcl18u77mkjkh0p6s8t64jc8jmenbgc6.apps.googleusercontent.com'
+      },
+      ucsd: {
+        _scheme: 'oauth2',
+        authorization_endpoint: 'https://accounts.google.com/o/oauth2/auth',
+        userinfo_endpoint: 'https://www.googleapis.com/oauth2/v3/userinfo',
+        scope: ['openid', 'profile', 'email'],
+        response_type: 'token',
+        token_type: 'Bearer',
+        redirect_uri: undefined,
+        client_id: 'SET_ME',
+        token_key:  'access_token'
+      }
+    }
   },
   /*
   ** Include css not in components

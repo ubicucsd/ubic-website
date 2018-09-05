@@ -46,6 +46,9 @@ export default {
   },
   components: {
     Cal
+  },
+  mounted () {
+    //return this.$auth.logout()
   }
 }
 </script>
@@ -63,7 +66,7 @@ export default {
 
 #setting {
   height: auto;
-  width: 700px;
+  width: 500px;
 
   border: none;
 }

@@ -35,8 +35,9 @@ export default {
   },
   methods: {
     async getEvents() {
+      //seems like axios wants to send login tokens if avaliable; disrupts Cal component so disabled here
+      this.$axios.setHeader('Authorization', '');
       const ip = await this.$axios.$get('https://www.googleapis.com/calendar/v3/calendars/jj0278t9epcqh2iv3i4gjuu98o@group.calendar.google.com/events?key=AIzaSyD9VcoF3cUM1dM13V5a0RUImGP4BRLIH5A');
-      //this.events= ip.items;
       
       //parse
       let events = ip.items.map((val, i, arr) => {
@@ -80,7 +81,7 @@ export default {
 <style type="text/css">
 
 h2 {
-  font-size: 24px !important;
+  font-size: 20px !important;
 }
 
 @media only screen and (max-width: 480px) {

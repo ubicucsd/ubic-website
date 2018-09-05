@@ -14,13 +14,14 @@
     "deploy": "push-dir --dir=dist --remote=upstream --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/auth": "^4.5.1",
     "bulma": "^0.7.1",
     "firebase": "^5.3.0",
     "nuxt": "^1.0.0",
     "nuxt-buefy": "^0.1.0",
     "vue-full-calendar": "^2.6.1",
-    "vuefire": "^2.0.0-alpha.12"
+    "vuefire": "^2.0.0-alpha.12",
+    "@nuxtjs/axios": "^5.3.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
