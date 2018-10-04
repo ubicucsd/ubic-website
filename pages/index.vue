@@ -2,7 +2,7 @@
   <section class="home">
     <section class="hero">
       <div class="hero-body is-paddingless">
-        <div class="container is-fullhd">
+        <div class="is-fullhd">
           <figure class="image">
             <img class="is-pulled-left" id="setting" src="~/static/home.svg">
           </figure>

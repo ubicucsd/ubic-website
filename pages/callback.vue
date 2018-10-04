@@ -12,10 +12,15 @@
 import LoadingIcon from '../components/LoadingIcon.vue'
 
 export default {
-  name: 'Callback',
+  name: 'callback',
   components: {
     LoadingIcon
-  }
+  },
+  mounted() {
+    this.$router.push({
+    	path: '/'
+		})
+	}
 }
 </script>
 

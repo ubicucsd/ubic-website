@@ -28,7 +28,7 @@
                     Remember me
                   </label>
                 </div>
-                <button class="button is-block is-info is-fullwidth" @click="showError">Login</button>
+                <button class="button is-block is-info is-fullwidth" @click="showError" disabled>Login</button>
                 <hr>
                 <button class="button is-block is-info is-fullwidth" @click="$auth.loginWith('google')">Login with UCSD</button>
               </div>
@@ -64,7 +64,7 @@ export default {
     showError() {
       this.$toast.open({
         duration: 5000,
-        message: `Login is currently disabled!`,
+        message: `This button is currently disabled!`,
         position: 'is-bottom',
         type: 'is-danger'
       })

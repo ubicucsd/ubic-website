@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'ubic_website',
+    title: 'UBIC @ UCSD',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -18,7 +18,11 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#F7C8A5' },
-  router: { base: '' },
+  router: { 
+    base: '',
+    routes: [
+    ]
+  },
   /*
   ** Build configuration
   */
@@ -38,7 +42,10 @@ module.exports = {
   },
   auth: {
     redirect: {
-      callback: '/callback'
+      callback: '/callback',
+      login: '/login',
+      logout: '/',
+      user: '/dashboard'
     },
     strategies: {
       google: {

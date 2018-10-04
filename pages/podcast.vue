@@ -6,7 +6,7 @@
           <p>The UCSD Bioinformatics Podcast</p>
         </div>
         <div class="message-body">
-          The UCSD Bioinformatics Podcast is a platform to allow UCSD researchers, professors, and alumni in bioinformatics to communicate their ideas with undergraduates and answer common questions, present unique experiences, and generate early passion in the rapidly growing field of bioinformatics. The UCSD Bioinformatics Podcast is a UBIC production hosted by <router-link :to="{ name: 'contact' }">Neha Pursala and Ginny Wu.</router-link>
+          The UCSD Bioinformatics Podcast is a platform to allow UCSD researchers, professors, and alumni in bioinformatics to communicate their ideas with undergraduates and answer common questions, present unique experiences, and generate early passion in the rapidly growing field of bioinformatics. The UCSD Bioinformatics Podcast is a UBIC production hosted by several different UBIC officers over the years. During the 2017-2018 years, the UBIC Podcast hosts were <router-link :to="{ name: 'contact' }">Neha Pursala and Ginny Wu.</router-link>
         </div>
       </article>
       <div class="columns">

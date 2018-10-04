@@ -6,7 +6,7 @@
       <div class="navbar-brand">
         <a class="navbar-item">
           <nuxt-link to="/">
-            <img src="~/assets/images/logo.png">
+            <img src="~/assets/images/logo2.png">
           </nuxt-link>
         </a>
         <div class="navbar-burger burger" data-target="navbarDropdown" @click="menuIsActive = !menuIsActive" :class="{ 'is-active': menuIsActive }">
@@ -65,9 +65,23 @@
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
+            <p v-if="$auth.loggedIn"> Hi there, {{$auth.user.name.split(" ")[0]}}! </p>
+          </div>
+          <div class="navbar-item">
+
             <div class="field is-grouped">
+
               <p class="control">
-                <a class="button">
+                <a class="button" v-if="$auth.loggedIn" @click="$auth.logout()">
+                  <span class="icon">
+                    <i class="fas fa-sign-in-alt"/>
+                  </span>
+                  <span>
+
+                    <nuxt-link to="/" >Logout</nuxt-link>
+                  </span>
+                </a>
+                <a class="button" v-else>
                   <span class="icon">
                     <i class="fas fa-sign-in-alt"/>
                   </span>
@@ -110,6 +124,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+a {
+  color: #D18354;
+}
 
 .navbar {
   height: 3.25rem;
