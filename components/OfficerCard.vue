@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-image">
       <figure class="image">
-        <img :src="imgPath" alt="Placeholder image">
+        <img :src="imgPath" alt="https://via.placeholder.com/1333x2000">
       </figure>
     </div>
     <div class="card-content">
