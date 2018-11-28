@@ -7,7 +7,7 @@
             
             <div class="box">
               <figure class="avatar image is-128x128">
-                <img src="~/assets/images/opp_default.jpg">
+                <img src="~/assets/images/opp_default.jpeg">
               </figure>
 
               <div class="form">
@@ -28,12 +28,10 @@
                     Remember me
                   </label>
                 </div>
-                <button class="button is-block is-info is-fullwidth" @click="showError" disabled>Login</button>
+                <button class="button is-block is-info is-fullwidth" @click="$auth.login()">Login</button>
                 <hr>
                 <button class="button is-block is-info is-fullwidth" @click="$auth.loginWith('google')">Login with UCSD</button>
               </div>
-                              
-
             </div>
             <p class="has-text-grey">
               <a @click="showError">Sign Up</a> &nbsp;·&nbsp;
@@ -81,22 +79,6 @@ export default {
         .catch(e => {
           this.error = e + ''
         })
-    }
-  },
-  computed: {
-    redirect() {
-      return (
-        this.$route.query.redirect &&
-        decodeURIComponent(this.$route.query.redirect)
-      )
-    },
-    isCallback() {
-      return Boolean(this.$route.query.callback)
-    }
-  },
-  firestore () {
-    return {
-      officers: db.collection('officers').orderBy('index')
     }
   }
 }

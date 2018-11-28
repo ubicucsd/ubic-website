@@ -9,18 +9,14 @@
 </template>
 
 <script>
+import { db } from '../plugins/firebase'
 import LoadingIcon from '../components/LoadingIcon.vue'
 
 export default {
   name: 'callback',
   components: {
     LoadingIcon
-  },
-  mounted() {
-    this.$router.push({
-    	path: '/'
-		})
-	}
+  }
 }
 </script>
 

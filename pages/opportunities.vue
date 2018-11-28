@@ -1,8 +1,9 @@
 <template>
   <section class="opps">
-    <div class="section">
+    <section class="section">
       <div class="container">
-        <div v-if="!$auth.loggedIn" class="columns">
+        
+        <div v-if="!this.$auth.$storage.getCookie('member')" class="columns">
           <div class="column is-half is-offset-one-quarter" >
             <div class="card notification">
               <div class="content">
@@ -26,7 +27,9 @@
           </div>
         </div>
       </div>
-      <section class="section">
+    </section>
+    <section class="section">
+      <div class="container">
         <article class="message is-info">
           <div class="message-header">
             <p>UBIC Opportunities</p>
@@ -35,8 +38,8 @@
             If you would like to post an opportunity to the UBIC opportunities page, please send an email to our Academic Relations Chair, <router-link :to="{ name: 'contact' }">York Zhang.</router-link>
           </div>
         </article>
-      </section>
-    </div>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -54,12 +57,15 @@ export default {
   components: {
     'OpportunityCard': OpportunityCard
   },
+  mounted: function() {
+    //console.log(opps);
+  },
   firestore () {
-    var d = (new Date()).toLocaleDateString('en-US');
-    console.log(d);
-    console.log(d >= "11/01/2018")
+    //date checking debug
+    //var d = (new Date()).toLocaleDateString('en-US');
+    //console.log(d >= "11/01/2018")
     return {
-      opps: db.collection('opportunities').where("10", '>=', d)
+      opps: db.collection('opportunities')
     }
   }
 }

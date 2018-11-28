@@ -41,16 +41,14 @@ module.exports = {
     // proxyHeaders: false
   },
   auth: {
+    //plugins: ['~/plugins/auth-tweak.js'],
     redirect: {
       callback: '/callback',
-      login: '/login',
-      logout: '/',
-      user: '/dashboard'
+      logout: '/'
     },
     strategies: {
       google: {
-        client_id:
-          '10317661874-kcl18u77mkjkh0p6s8t64jc8jmenbgc6.apps.googleusercontent.com'
+        client_id: '10317661874-kcl18u77mkjkh0p6s8t64jc8jmenbgc6.apps.googleusercontent.com'
       },
       ucsd: {
         _scheme: 'oauth2',

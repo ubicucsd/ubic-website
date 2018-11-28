@@ -4,7 +4,7 @@
       <div class="hero-body is-paddingless">
         <div class="is-fullhd">
           <figure class="image">
-            <img class="is-pulled-left" id="setting" src="~/static/home.svg">
+            <img class="is-pulled-left" id="setting" src="~/static/home2.svg">
           </figure>
         </div>
       </div>
@@ -35,20 +35,36 @@
 </template>
 
 <script>
+import { db } from '../plugins/firebase'
 import Cal from '../components/Cal.vue'
 
 export default {
   name: 'home',
   data () {
     return {
-      msg: 'Supporting the discipline of bioinformatics throughout the University of California, San Diego.'
+      msg: 'Supporting the discipline of bioinformatics throughout the University of California, San Diego.',
+      members: [],
+      email: (typeof this.$auth.user != 'undefined' && this.$auth.user && this.$auth.user.email === 'undefined') ? "this.$auth.user.email" : "test@ubic.org" 
     }
   },
   components: {
     Cal
   },
-  mounted () {
-    //return this.$auth.logout()
+  mounted() {
+  },
+  firestore () {
+    members: db.collection('members').where("1","==",this.$data.email)
+    this.checkAuth();
+  },
+  methods: {
+    checkAuth: function() {
+      //if object is null, email doesn't exist in member list
+      if (this.$data.members == null) {
+        return false;
+      } else {
+        this.$auth.$storage.setCookie("member", "true", true)
+      }
+    }
   }
 }
 </script>
@@ -56,7 +72,7 @@ export default {
 <style lang="scss" scoped>
 
 .hero {
-  background-color: #F7C8A5;
+  background-color: #F3B990;
 }
 
 #jumbotron {

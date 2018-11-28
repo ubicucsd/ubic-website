@@ -72,7 +72,7 @@
             <div class="field is-grouped">
 
               <p class="control">
-                <a class="button" v-if="$auth.loggedIn" @click="$auth.logout()">
+                <a class="button" v-if="$auth.loggedIn" @click="logout()">
                   <span class="icon">
                     <i class="fas fa-sign-in-alt"/>
                   </span>
@@ -112,6 +112,12 @@ export default {
     toggleMenu: function() {
       console.log("Yessir");
       this.menuIsActive = !this.menuIsActive;
+    },
+    logout: function() {
+      console.log("Pre logout, member:" + this.$auth.$storage.getCookie("member"));
+      this.$auth.$storage.setCookie("member", "false", true);
+      console.log("Post logout, member:" + this.$auth.$storage.getCookie("member"));
+      this.$auth.logout();
     }
   },
    watch: {
@@ -126,7 +132,15 @@ export default {
 <style lang="scss" scoped>
 
 a {
-  color: #D18354;
+  color: #337A8A;
+}
+
+.navbar-link:hover {
+  color: #D58521;
+}
+
+.navbar-link:after {
+  border-color: #D58521;
 }
 
 .navbar {

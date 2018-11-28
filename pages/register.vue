@@ -7,7 +7,7 @@
             
             <div class="box">
               <figure class="avatar image is-128x128">
-                <img src="~/assets/images/opp_default.jpg">
+                <img src="~/assets/images/opp_default.jpeg">
               </figure>
 
               <div class="form">

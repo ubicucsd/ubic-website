@@ -46,7 +46,7 @@ export default {
           start: val.start.dateTime,
           end: val.end.dateTime,
           url: val.htmlLink,
-          color: '#393D90',
+          color: '#337A8A',
         };
       });
 
