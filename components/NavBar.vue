@@ -18,49 +18,49 @@
       <div id="navbarDropdown" class="navbar-menu" :class="{ 'is-active': menuIsActive }">
         <div class="navbar-start">
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#">
+            <a class="navbar-link" href="">
               Resources
             </a>
             <div class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                 Education
               </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                 Four Year Plan
               </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                  <nuxt-link to="opportunities">Opportunities</nuxt-link>
               </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                 Careers
               </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                 <nuxt-link to="faculty">Faculty</nuxt-link>
               </a> 
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#">
+            <a class="navbar-link" href="">
               Get Involved
             </a>
             <div class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                 Events
               </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                 Outreach
               </a>
-              <a class="navbar-item" href="#" >
+              <a class="navbar-item" href="" >
                 <nuxt-link to="podcast">Podcast</nuxt-link>
               </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                 Sponsorship
               </a>
               <hr class="navbar-divider">
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                 <nuxt-link to="calendar">Calendar</nuxt-link>
               </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" href="">
                 <nuxt-link to="contact">Contact</nuxt-link>
               </a>
             </div>
