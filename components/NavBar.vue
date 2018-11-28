@@ -33,6 +33,9 @@
               </a>
               <a class="navbar-item" href="#">
                 Careers
+              </a>
+              <a class="navbar-item" href="#">
+                <nuxt-link to="faculty">Faculty</nuxt-link>
               </a> 
             </div>
           </div>

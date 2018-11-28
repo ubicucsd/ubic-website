@@ -1,64 +1,24 @@
 <template>
-  <section class="contact">
-    <div class="section">
+  <section class="section contact">
+    <div class="container">
      <b-tabs position="is-centered" class="block">
       <b-tab-item label="2018-2019">
         <div>
-          <div class="columns">
-            <div class="column" v-for="officer in officers.filter(off => off.officeryear == 2018).slice(0,3)" :key="officer.name">
+          <div class="columns is-multiline">
+            <div class="column is-one-quarter" v-for="officer in officers.filter(off => off.officeryear == 2018)" :key="officer.name">
               <OfficerCard :obj=officer></OfficerCard>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column" v-for="officer in officers.filter(off => off.officeryear == 2018).slice(3,6)" :key="officer.name">
-              <OfficerCard :obj=officer></OfficerCard>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column" v-for="officer in officers.filter(off => off.officeryear == 2018).slice(6,9)" :key="officer.name">
-              <OfficerCard :obj=officer></OfficerCard>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column" v-for="officer in officers.filter(off => off.officeryear == 2018).slice(9,12)" :key="officer.name">
-              <OfficerCard :obj=officer></OfficerCard>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column is-one-third" v-for="officer in officers.filter(off => off.officeryear == 2018).slice(12,13)" :key="officer.name">
-              <OfficerCard :obj=officer></OfficerCard>
-            </div>
+            </div>   
           </div>
         </div>
       </b-tab-item>
       <b-tab-item label="2017-2018">
         <div>
-          <div class="columns">
-            <div class="column" v-for="officer in officers.filter(off => off.officeryear == 2017).slice(0,3)" :key="officer.name">
+          <div class="columns is-multiline">
+            <div class="column is-one-quarter" v-for="officer in officers.filter(off => off.officeryear == 2017)" :key="officer.name">
               <OfficerCard :obj=officer></OfficerCard>
-            </div>
+            </div>   
           </div>
-          <div class="columns">
-            <div class="column" v-for="officer in officers.filter(off => off.officeryear == 2017).slice(3,6)" :key="officer.name">
-              <OfficerCard :obj=officer></OfficerCard>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column" v-for="officer in officers.filter(off => off.officeryear == 2017).slice(6,9)" :key="officer.name">
-              <OfficerCard :obj=officer></OfficerCard>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column" v-for="officer in officers.filter(off => off.officeryear == 2017).slice(9,12)" :key="officer.name">
-              <OfficerCard :obj=officer></OfficerCard>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column is-one-third" v-for="officer in officers.filter(off => off.officeryear == 2017).slice(12,13)" :key="officer.name">
-              <OfficerCard :obj=officer></OfficerCard>
-            </div>
-          </div>
-        </div>
+        </div> 
       </b-tab-item>
     </b-tabs>
 

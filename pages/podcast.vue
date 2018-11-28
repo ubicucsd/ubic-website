@@ -1,6 +1,6 @@
 <template>
-  <section class="podcast">
-    <div class="section">
+  <section class="section podcast">
+    <div class="container">
       <article class="message is-info">
         <div class="message-header">
           <p>The UCSD Bioinformatics Podcast</p>
