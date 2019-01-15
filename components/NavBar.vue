@@ -56,6 +56,9 @@
               <a class="navbar-item" href="">
                 Sponsorship
               </a>
+              <a class="navbar-item" href="">
+                <nuxt-link to="shop">Shop</nuxt-link>
+              </a>
               <hr class="navbar-divider">
               <a class="navbar-item" href="">
                 <nuxt-link to="calendar">Calendar</nuxt-link>
