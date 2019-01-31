@@ -2,7 +2,7 @@
   <section class="shop">
     <div class="section">
       <div class="container has-text-centered">
-        <article class="message is-success">
+        <article class="message is-info">
           <div class="message-header">
             <p> The UBIC Store </p>
           </div>

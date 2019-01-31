@@ -1,4 +1,5 @@
 <script>
+//to be used as an example of link forwarding
 export default {
   name: 'pubform',
 	fetch ({ params, redirect }) {

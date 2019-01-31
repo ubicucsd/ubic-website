@@ -2,7 +2,6 @@
   <section class="opps">
     <section class="section">
       <div class="container">
-        
         <div v-if="!this.$auth.$storage.getCookie('member')" class="columns">
           <div class="column is-half is-offset-one-quarter" >
             <div class="card notification">

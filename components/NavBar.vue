@@ -32,6 +32,9 @@
                  <nuxt-link to="opportunities">Opportunities</nuxt-link>
               </a>
               <a class="navbar-item" href="">
+                 <nuxt-link to="jobs">Jobs</nuxt-link>
+              </a>
+              <a class="navbar-item" href="">
                 Careers
               </a>
               <a class="navbar-item" href="">

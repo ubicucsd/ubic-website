@@ -1,6 +1,6 @@
 <template>
   <section>
-    <section class="hero is-primary">
+    <section class="hero">
       <div class="hero-body">
         <div class="container">
           <p class="title">Industry Job Opportunites</p>
@@ -32,7 +32,7 @@
 	            	<tr v-for="job in jobs" :key="job.id">
 	            	  <td>{{ job[1] }}</td>
 	            	  <td>{{ job[2] }}</td>
-	            	  <td>{{ job[3]  }}</td>
+	            	  <td>{{ job[3] }}</td>
 	            	  <td>{{ job[4] }}</td>
 	            	  <td>{{ job[5] }}</td>
                   <td>
@@ -52,19 +52,14 @@
 
 <script>
 import { db } from '../plugins/firebase'
-import JobRow from '../components/JobRow.vue'
 
 export default {
   name: 'jobs',
-  components: {
-    'JobRow': JobRow
-  },
   data () {
     return {
       jobs: [],
     }
   },
-  
   firestore () {
     return {
       jobs: db.collection('jobs')
@@ -75,9 +70,16 @@ export default {
 
 
 <style lang="css" scoped>
-  @charset "UTF-8";
-  .hero .title a {
-    text-decoration: underline;
+  .hero {
+    background-color: #F3B990;
+  }
+
+  .button {
+    background-color: #337A8A;
+  }
+
+  .hero .title,.subtitle {
+    color: white !important
   }
 
   h1 {
@@ -161,5 +163,4 @@ export default {
       border-width: 1px;
     }
   }
-
 </style>
