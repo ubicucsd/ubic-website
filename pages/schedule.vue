@@ -6,9 +6,9 @@
           <p>UBIC Bioinformatics Chalk Talks</p>
         </div>
         <div class="message-body">
-          <p> The Chalk Talks are a research seminar series hosted in collaboration with the Graduate Bioinformatics Club (GBIC) and Dr. Shankar Subramaniam. Each talk is scheduled for 30 minutes with another 30 minutes allocated for questions. The purpose of the talk should be to convey the general idea of the research to a broad audience of undergraduate, graduate, and professional bioinformaticians. </p>
+          <p> The Chalk Talks are a research seminar series hosted in collaboration with the Graduate Bioinformatics Club (GBIC) (we have consulted with Professor Subramaniam in the Bioinformatics Program to organize this series). The purpose of the talk should be to convey the general idea of the research to a broad audience of undergraduate and graduate students. Each talk is scheduled for 1 hour to be used as you see fit. </p>
           <br>
-          <p> To prioritize understanding over research minutiae, the lectures will consist of access to only a whiteboard or blackboard. No PowerPoint, no projector, no electronic devices. </p>
+          <p> To enable us to better understand potential research opportunities in bioinformatics, we request you to use a chalkboard format in an informal setting as opposed to a formal PowerPoint presentation. </p>
           <br>
           <p> To schedule a time for your chalk talk, please click the button below. Please do not schedule a chalk talk at the same time as another individual. </p>
           <br>
