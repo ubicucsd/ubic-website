@@ -251,7 +251,7 @@
               <div class="card disp-card">
                 <div class="card-image">
                   <figure class="image is-1by1">
-                    <img src="~/assets/images/sbc/sponsor/CRCERA.jpg" alt="Placeholder image">
+                    <img src="~/assets/images/sbc/sponsor/pfizer.png" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="card-content">
@@ -262,7 +262,7 @@
                     </div>
                   </div>
                   <div class="content">
-                    <a href="https://crcera.ucsd.edu" target="_blank">Learn More</a>
+                    <a href="https://www.pfizer.com" target="_blank">Learn More</a>
                   </div>
                   <b-tag type="is-gold" class="tag is-gold">Gold</b-tag>
                 </div>
