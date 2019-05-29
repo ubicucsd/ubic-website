@@ -271,7 +271,7 @@
           </div>
           <hr>
           <div class="columns is-centered">
-            <div class="column is-one-quarter">
+            <div class="column is-one-fifth">
               <div class="card disp-card">
                 <div class="card-image">
                   <figure class="image is-1by1">
@@ -292,7 +292,7 @@
                 </div>
               </div>
             </div>
-            <div class="column is-one-quarter">
+            <div class="column is-one-fifth">
               <div class="card disp-card">
                 <div class="card-image">
                   <figure class="image is-1by1">
@@ -313,7 +313,7 @@
                 </div>
               </div>
             </div>
-            <div class="column is-one-quarter">
+            <div class="column is-one-fifth">
               <div class="card disp-card">
                 <div class="card-image">
                   <figure class="image is-1by1">
@@ -334,7 +334,7 @@
                 </div>
               </div>
             </div>
-            <div class="column is-one-quarter">
+            <div class="column is-one-fifth">
               <div class="card disp-card">
                 <div class="card-image">
                   <figure class="image is-1by1">
@@ -350,6 +350,27 @@
                   </div>
                   <div class="content">
                     <a href="https://www.4dnucleome.org/outreach.html" target="_blank">Learn More</a>
+                  </div>
+                  <b-tag type="is-silver" class="tag is-silver">Silver</b-tag>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-fifth">
+              <div class="card disp-card">
+                <div class="card-image">
+                  <figure class="image is-1by1">
+                    <img src="~/assets/images/sbc/sponsor/10x.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left"></div>
+                    <div class="media-content">
+                      <p class="title is-5">10x Genomics</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <a href="https://www.10xgenomics.com" target="_blank">Learn More</a>
                   </div>
                   <b-tag type="is-silver" class="tag is-silver">Silver</b-tag>
                 </div>
