@@ -12,6 +12,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
+          <p>Under Construction</p>
           <p> UBIC at UCSD represents our undergraduates who are studying in or interested in the diverse field of bioinformatics. Through a combination of events, programs, and projects our mission is to educate and contribute to the education and aspirations of every bioinformatics student at UC San Diego. </p>
           <hr>
           <p> If you’re a student, use the calendar below to find our upcoming events and programs. </p>
